@@ -1,0 +1,124 @@
+SHAPE:
+import java.util.Date;
+
+class Shape {
+    private static int shapeIdCounter = 1;
+    private int shapeId;
+    private Date creationTime;
+
+    public Shape() {
+        this.shapeId = shapeIdCounter++;
+        this.creationTime = new Date();
+    }
+
+    public int getShapeId() {
+        return shapeId;
+    }
+
+    public Date getCreationTime() {
+        return creationTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Shape ID: " + shapeId + ", Created at: " + creationTime;
+    }
+}
+class Rectangle extends Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Rectangle - Length: " + length + ", Width: " + width;
+    }
+}
+
+class Square extends Shape {
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Square - Side: " + side;
+    }
+}
+
+class Triangle extends Shape {
+    private double base;
+    private double height;
+
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Triangle - Base: " + base + ", Height: " + height;
+    }
+}
+SHAPE LINKEDLIST:
+class Rectangle extends Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Rectangle - Length: " + length + ", Width: " + width;
+    }
+}
+
+class Square extends Shape {
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Square - Side: " + side;
+    }
+}
+
+class Triangle extends Shape {
+    private double base;
+    private double height;
+
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    // Include getters, setters, and other methods as needed
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Triangle - Base: " + base + ", Height: " + height;
+    }
+}
+
